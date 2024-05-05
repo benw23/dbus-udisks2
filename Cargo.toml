@@ -9,13 +9,13 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-dbus = "0.9.0"
-num_enum = "0.5.1"
-futures-util = { version = "0.3", features = ["async-await"], optional = true }
+dbus = "^0.9"
+num_enum = "^0.7"
+futures-util = { version = "^0.3", features = ["async-await"], optional = true }
 
 [dev-dependencies]
-tokio = { version = "0.2.4", features = ["macros"] }
-dbus-tokio = "0.6.0"
+tokio = { version = "^1", features = ["macros"] }
+dbus-tokio = "^0.7"
 
 [features]
 futures = ["dbus/futures", "futures-util"]
